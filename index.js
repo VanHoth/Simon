@@ -133,3 +133,4 @@ $('#red').fadeOut(1).delay(1000).fadeIn(1500);
 $('#yellow').fadeOut(1).delay(1500).fadeIn(1500);
 $('#blue').fadeOut(1).delay(2000).fadeIn(1500);
 $('#start').fadeOut(1).delay(2500).fadeIn(1500);
+$('.foot').fadeOut(1).delay(3000).fadeIn(1500);

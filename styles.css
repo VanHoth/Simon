@@ -18,6 +18,15 @@ body {
   margin: 20% 20% 10%;
   color: #FEF2BF;
 }
+
+.foot
+{
+ 
+ position: absolute;
+  bottom: 0px;
+  width: 100%;
+
+}
 }
 
 .container {
@@ -84,10 +93,8 @@ p
 .foot
 {
  
-  position: absolute;
+ 
   bottom: 0px;
   width: 100%;
 
-
-  
 }
