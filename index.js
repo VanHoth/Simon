@@ -8,6 +8,14 @@ var level = 0;
 
 var begin = false;
 
+
+var redClick = new Audio("sounds/red.mp3");
+var yellowClick = new Audio("sounds/yello.mp3");
+var blueClick = new Audio("sounds/blue.mp3");
+var greenClick = new Audio("sounds/green.mp3");
+var wrongClick = new Audio("sounds/wrong.mp3");
+
+
 //#玩家点击按钮
 $('.btn').click(function () {
 
@@ -41,8 +49,8 @@ $('.btn').click(function () {
 
     }, 150);
 
-    var audio = new Audio("sounds/wrong.mp3");
-    audio.play()
+   
+    wrongClick.play()
     //console.log("wrong");
     gameOver();
   }
@@ -62,17 +70,17 @@ function beginGame() {
   if (level == 0) {
     begin = true;
     //开始游戏
-    
+
     $('#start').addClass("pressed");
     setTimeout(function () {
       $('#start').removeClass("pressed");
       $('#start').hide();
     }, 100);
 
-   
-      nextSequence();
-    
-  
+
+    nextSequence();
+
+
   }
 
 }
@@ -89,7 +97,7 @@ function gameOver() {
 
 function nextSequence() {
 
-  if(begin==false)return;
+  if (begin == false) return;
   //清空玩家选择
   userClickedPattern = [];
 
@@ -105,17 +113,35 @@ function nextSequence() {
 
   setTimeout(() => {
     //显示下一个
-  $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+    $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
 
-  //console.log("下一关");
-  playSound(randomChosenColour);
+    //console.log("下一关");
+    playSound(randomChosenColour);
   }, 500);
- 
+
 }
 
+
+
 function playSound(name) {
-  var audio = new Audio("sounds/" + name + ".mp3");
-  audio.play();
+
+  switch (name) {
+    case "red":
+redClick.play();
+      break;
+    case "blue":
+blueClick.play();
+      break;
+    case "yellow":
+yellowClick.play();
+      break;
+    case "green":
+greenClick.play();
+      break;
+
+  }
+
+ 
 }
 
 function animatePress(currentColor) {
