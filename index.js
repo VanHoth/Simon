@@ -10,7 +10,7 @@ var begin = false;
 
 
 var redClick = new Audio("sounds/red.mp3");
-var yellowClick = new Audio("sounds/yello.mp3");
+var yellowClick = new Audio("sounds/yellow.mp3");
 var blueClick = new Audio("sounds/blue.mp3");
 var greenClick = new Audio("sounds/green.mp3");
 var wrongClick = new Audio("sounds/wrong.mp3");
