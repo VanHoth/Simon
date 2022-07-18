@@ -1,0 +1,93 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+@media (orientation:portrait) {
+  
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 5rem;
+  margin: 20% 20% 10%;
+  color: #FEF2BF;
+}
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+
+#start
+{
+  background-color:white;
+  margin: 25px;
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  font-size:xx-large;
+  text-align: center;
+}
+
+p
+{
+  font-size:x-large;
+  color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.foot
+{
+ 
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+
+
+  
+}
